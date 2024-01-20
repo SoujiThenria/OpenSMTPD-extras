@@ -5,5 +5,5 @@ pkglibexec_PROGRAMS	 = table-ldap
 
 table_ldap_SOURCES	 = $(SRCS)
 table_ldap_SOURCES	+= table_ldap.c
-table_ldap_SOURCES	+= aldap.c
-table_ldap_SOURCES	+= ber.c
+
+LDADD	+= -lldap
